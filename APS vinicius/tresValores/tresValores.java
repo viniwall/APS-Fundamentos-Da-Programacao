@@ -2,27 +2,44 @@ package tresValores;
 import java.util.Scanner;
 
 public class tresValores {
-   static int CalcMenorValor(int x ){
-        
-   }
-   static int CalcMedioValor(){
+    public static void main(String[] args) {
+        boolean repetir = true;
+        Scanner s = new Scanner(System.in); 
 
-   }
-   static int CalcMaiorValor(){
+        while (repetir) {
+        System.out.println("INSIRA TRêS VALORES:");
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int c = s.nextInt();
 
-   }
-        public static void main(String[] args) {
-                Scanner s = new Scanner(System.in);
+        int temp; 
 
-                System.out.println("INSIRA OS TRÊS VALORES:");
-                int menorValor = s.nextInt();
-                int medioValor = s.nextInt();
-                int maiorValor = s.nextInt();
-
-                System.out.println("MENOR VALOR: "+menorValor);
-                System.out.println("VALOR MÉDIO: "+medioValor);
-                System.out.println("MAIOR VALOR: "+maiorValor);
-                
-                s.close();
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
         }
+        if (b > c) {
+            temp = b;
+            b = c;
+            c = temp;
+        }
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+
+        System.out.println("ORDEM CRESCENTE DOS VALORES: " + a + " " + b + " " + c);
+
+        System.out.println("REPETIR CÁLCULO?");
+        String resposta = s.nextLine();
+        s.nextLine();
+        if (resposta.equalsIgnoreCase("s")) {
+            repetir = true;
+        }
+        } 
+
+        s.close();
+    }
 }
