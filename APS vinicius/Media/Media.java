@@ -2,7 +2,7 @@ package Media;
 import java.util.Scanner;
 
 public class Media {
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
         System.out.println("INSIRA AS TRÊS NOTAS:");
