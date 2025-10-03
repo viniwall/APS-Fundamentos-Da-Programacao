@@ -7,7 +7,7 @@ public class tresValores {
         Scanner s = new Scanner(System.in); 
 
         while (repetir) {
-        System.out.println("INSIRA TRêS VALORES:");
+        System.out.println("INSIRA TRÊS VALORES:");
         int a = s.nextInt();
         int b = s.nextInt();
         int c = s.nextInt();
@@ -23,11 +23,6 @@ public class tresValores {
             temp = b;
             b = c;
             c = temp;
-        }
-        if (a > b) {
-            temp = a;
-            a = b;
-            b = temp;
         }
 
         System.out.println("ORDEM CRESCENTE DOS VALORES: " + a + " " + b + " " + c);

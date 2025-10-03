@@ -11,11 +11,11 @@ public class AeB {
         double valorB = s.nextDouble();
 
         if (valorA==valorA&&valorB==valorB) {
+            double temp = valorA;
             valorA = valorB;
-            System.out.println("VALOR A: "+valorA+"\nVALOR B: "+valorB);
+            valorB = temp;
+            System.out.println("VALOR DE A: "+valorA+"\nVALOR DE B: "+valorB);
         }
-
-
 
         s.close();
     }
